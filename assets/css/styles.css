@@ -1,0 +1,227 @@
+/* COLORS */
+
+:root {
+  --accent: #0d6efd;
+}
+
+/* Dark Mode, aka the BEST mode. */
+
+body {
+  background-color: #2d2d2d;
+  font-family: Inter;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #f4f4f4;
+}
+
+.btn-primary {
+  background-color: #3c3c3c;
+  color: #f4f4f4;
+  border-style: none;
+  border-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: #4c4c4c;
+}
+
+.button-icon {
+  color: var(--accent);
+}
+
+/* 0d6efd */
+
+.passwd, .passwd:active, .passwd:focus {
+  color: #f4f4f4;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+  border-bottom-color: #4c4c4c;
+}
+
+.form-control, .form-control:active, .form-control:focus {
+  color: #f4f4f4;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
+  border-bottom-color: #4c4c4c;
+  margin-bottom: 2vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.winsford {
+  color: rgb(167,167,167);
+}
+
+.options-content {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 10px 0px 10px 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .options-content {
+    margin: 15vh auto;
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 490px) {
+  .settings-sm {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .options-content {
+    margin: 10vh auto;
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .settings-lg {
+    display: none;
+  }
+}
+
+/* Light Mode, for noobs. */
+
+body.light {
+  background-color: #f4f4f4;
+  font-family: Inter;
+}
+
+body.light h1, body.light h2, body.light h3, body.light h4, body.light h5, body.light h6, body.light p {
+  color: #2d2d2d;
+}
+
+body.light .btn-primary {
+  background-color: #dedede;
+  color: #2d2d2d;
+  border-style: none;
+  border-radius: 6px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+body.light .btn-primary:hover, body.light .btn-primary:active, body.light .btn-primary:focus {
+  background-color: #c1c1c1;
+}
+
+body.light .button-icon {
+  color: var(--accent);
+}
+
+body.light .passwd, body.light .passwd:active, body.light .passwd:focus {
+  color: #3d3d3d;
+  background-color: #dedede;
+  border-color: #dedede;
+  border-bottom-color: #c1c1c1;
+}
+
+body.light .winsford {
+  color: rgb(129, 128, 128);
+}
+
+.form-control::file-selector-button, .form-control::file-selector-button:hover {
+  color: #6c757d;
+  background-color: #1c1c1c;
+}
+
+body.light .options-content {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px 0px 10px 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+  body.light .options-content {
+    margin: 15vh auto;
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body.light .options-content {
+    margin: 10vh auto;
+    width: 90vw;
+  }
+}
+
+/* --- OTHER --- */
+
+.social {
+  z-index: 1000;
+}
+
+/* Options Menu Background */
+
+.options {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Fade Options */
+
+.fade-in {
+  -webkit-animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 0.2s ease-out both;
+  animation: fade-out 0.2s ease-out both;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Password Protected Specific */
+
+#contentFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#dialogWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.error {
+  display: none;
+  color: red;
+}
+
