@@ -5,7 +5,7 @@
 // Selects random header image + saves for session
 window.onload = selectImg;
 
-var images = new Array("assets/img/beach.jpg", "assets/img/city.jpg", "assets/img/valley.jpg", "assets/img/hills.jpg", "assets/img/rocky-beach.jpg", "assets/img/trees-lake.jpg", "assets/img/trees.jpg");
+var images = new Array("assets/img/house-lake.jpg", "assets/img/city.jpg", "assets/img/rocky-beach.jpg", "assets/img/trees-lake.jpg", "assets/img/valley.jpg", "assets/img/trees-sea.jpg", "assets/img/mainland-sea.jpg");
 
 function selectImg() {
     if ("headerImage" in sessionStorage) {
