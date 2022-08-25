@@ -7,10 +7,6 @@ function setColor() {
     let r = document.querySelector(':root');
     if ("color" in localStorage) {
         r.style.setProperty('--accent', "#" + localStorage.color);
-        if (window.location.pathname == '/') {
-            let x = document.getElementById('SAImage');
-            x.src = "https://simpleanalyticsbadges.com/benwrth.com?mode=dark&radius=10&logo=" + localStorage.color + "&text=" + localStorage.color + "&background=none";
-        }
     }
 }
 
