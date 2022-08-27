@@ -157,6 +157,11 @@ body.light .options-content {
   z-index: 1000;
 }
 
+.analytics {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 /* Options Menu Background */
 
 .options {
